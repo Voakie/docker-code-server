@@ -55,6 +55,9 @@ RUN \
     libsecret-1-dev \
     pkg-config && \
   apt-get clean && \
+  apt-get install -y \
+    gcc \
+    make && \
   rm -rf \
     /tmp/* \
     /var/lib/apt/lists/* \
